@@ -26,7 +26,7 @@ int main(void)
 			putchar(j + '0');
 			putchar(z + '0');
 			putchar(x + '0');
-			if (i != 9 && z != 9 && j != 0 && x != 0)
+			if (i != 9 && z != 9 && j != 9 && x != 9)
 			{
 				putchar(',');
 				putchar(' ');
