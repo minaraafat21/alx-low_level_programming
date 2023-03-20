@@ -19,9 +19,12 @@ int main(void)
 		{
 			for (z = i + 2 ; z < 10 ; z++)
 			{
+			if(z != i && z != j && i != j)
+			{
 			putchar(i + '0');
 			putchar(j + '0');
 			putchar(z + '0');
+			}
 			if (i != 7)
 			{
 				putchar(',');
@@ -34,4 +37,3 @@ int main(void)
 	}
 	return(0);
 }
-
