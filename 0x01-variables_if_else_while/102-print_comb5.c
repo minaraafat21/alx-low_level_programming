@@ -18,15 +18,15 @@ int main(void)
 	{
 		for (j = 0 ; j < 10 ; j++)
 		{
-			for (z = 0 ; z < 10 ; z++)
+			for (z = i ; z < 10 ; z++)
 			{
-			for (x = 0 ; x < 10 ; x++)
+			for (x = j + 1 ; x < 10 ; x++)
 			{
 			putchar(i + '0');
 			putchar(j + '0');
 			putchar(z + '0');
 			putchar(x + '0');
-			if (i != 9 && z != 9 && j != 9 && x != 9)
+			if (i != 9 || j != 8 || z != 9 || x != 9)
 			{
 				putchar(',');
 				putchar(' ');
