@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * rev_strig - func
+ * rev_string - func
  * @s: parameter
  * Return: void
  */
