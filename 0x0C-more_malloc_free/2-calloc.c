@@ -4,7 +4,6 @@
 /**
  * *_memset - sets to zeros
  * @s: memory area to be filled
- * @b: char 
  * @n: number of times to copy b
  *
  * Return: pointer to be retured
@@ -23,9 +22,8 @@ char *_memset(char *s, unsigned int n)
 
 /**
  * *_calloc - allocates memory for an array
- * @nmemb: number of elements 
+ * @nmemb: number of elements
  * @size: size of each element
- *
  * Return: pointer to allocated memory
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
