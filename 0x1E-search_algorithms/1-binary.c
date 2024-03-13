@@ -1,6 +1,14 @@
 #include "search_algos.h"
 #include <stdio.h>
 
+/**
+ * print_array - prints an array of integers
+ * @array: pointer to the start of the array
+ * @size: size of the array (number of elements)
+ *
+ * Return: nothing
+ */
+
 void print_array(int *array, int size)
 {
     int i;
@@ -20,6 +28,14 @@ void print_array(int *array, int size)
 
     printf("\n");
 }
+/**
+ * binary_search - find value in sorted array using binary search method
+ * @array: pointer to first element in array to be searched
+ * @size: size of the array (number of elements)
+ * @value: value to be searched for
+ *
+ * Return: index position of value or -1 if not found or array is null
+ */
 
 int binary_search(int *array, size_t size, int value)
 {
