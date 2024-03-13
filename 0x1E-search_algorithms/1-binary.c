@@ -8,19 +8,19 @@
  *
  * Return: nothing
  */
-
-void print_array(int *array, int size)
+ 
+void print_array(int *array, int start, int finish)
 {
     int i;
 
-    if (array == NULL || size == 0)
+    if (array == NULL)
         return;
 
     printf("Searching in array: ");
 
-    for (i = 0; i < size; i++)
+    for (i = start; i < finish; i++)
     {
-        if (i == 0)
+        if (i == start)
             printf("%d", array[i]);
         else
             printf(", %d", array[i]);
@@ -47,7 +47,7 @@ int binary_search(int *array, size_t size, int value)
     while (l <= r)
     {
         int middle = (l + r) / 2;
-        print_array(array, size);
+        print_array(array, l , r+1);
         if (array[middle] < value)
             l = middle + 1;
         else if (array[middle] > value)
